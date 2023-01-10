@@ -27,8 +27,23 @@
 .title {
   text-align: center;
 }
+.nav{
+  display: flex;
+  flex-direction: column;
+  color: #E9E9E9;
+  background-color: #333333;
+  width: 20vw;
+  padding-left: 10px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
 
 .title,
+.subtitle,
 .description {
   text-align: center;
 }
@@ -45,7 +60,6 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  max-width: 800px;
   margin-top: 3rem;
 }
 
