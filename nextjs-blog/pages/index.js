@@ -36,11 +36,15 @@ export default function Home() {
               Enter title I like
             </h3>
           </div>
-
+          {/* TODO: Summary Statement */}
           <p className={styles.description}>
             Get started by editing <code>pages/index.js</code>
           </p>
-
+          {/* TODO: Communication */}
+          {/* TODO: Languages */}
+          {/* TODO: Tools, Technologies, & Frameworks */}
+          {/* TODO: Skills */}
+          {/* TODO: Hobbies & Passions */}
           <div className={styles.grid}>
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h3>Documentation &rarr;</h3>
@@ -75,12 +79,11 @@ export default function Home() {
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/Carstal"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Created & Maintained by Carlo Staltari
         </a>
       </footer>
 
