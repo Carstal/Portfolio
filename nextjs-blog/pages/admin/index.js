@@ -31,7 +31,7 @@ export default function Home() {
         <h3 className={styles.title}>
             Login
         </h3>
-
+        {/* TODO: Login Handling */}
         <div className="container">
           <div className="card mt-5">
             <form className="card-body" action="/api/login" method="POST">
@@ -61,12 +61,11 @@ export default function Home() {
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/Carstal"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Created & Maintained by Carlo Staltari
         </a>
       </footer>
 
