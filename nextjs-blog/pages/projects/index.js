@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -36,6 +36,7 @@ export default function Home() {
               Here are some of my favourites
             </h3>
           </div>
+          <div className='projectsView'>
           {/* TODO: Get list of all projects */}
           {/* TODO: Align image and info horizontally */}
             <div className='projectCard'>
@@ -49,6 +50,7 @@ export default function Home() {
                     <div className='projectDesc'>Description</div>
                 </div>
             </div>
+          </div>
         </div>
       </main>
 
@@ -63,6 +65,41 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        .projectsView {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+        }
+        .projectCard {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            height: 200px;
+            border: 2px solid #555555;
+            border-radius: 30px;
+        }
+        .projectInfo{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 90%;
+        }
+        .projectImage {
+            margin-top: 10px;
+            height: 90%;
+            width: 30%;
+            text-align: center;
+        }
+        .projectTitle {
+            height: 20%;
+            font-weight: bold;
+        }
+        .projectDesc {
+            height: 80%;
+        }
         main {
           padding: 5rem 0;
           flex: 1;
@@ -83,7 +120,6 @@ export default function Home() {
           padding: S5px;
         }
         li:hover{
-          color: #FFFFFF;
           background-color: #000000;
         }
         footer {
