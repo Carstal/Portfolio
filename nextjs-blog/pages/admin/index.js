@@ -50,7 +50,7 @@ export default function Home() {
 
               <div className="form-group mt-3">
                 <button type="submit" className={styles.submitbutton}>
-                  Login
+                  <span>Login</span>
                 </button>
               </div>
                     </form>
@@ -80,6 +80,54 @@ export default function Home() {
           align-items: center;
           width: 100%;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .container div{
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #3d405b;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 17px;
+            padding: 16px;
+            width: 130px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+           }
+           button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+           }
+           button span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -15px;
+            transition: 0.5s;
+           }
+           button:hover span {
+            padding-right: 15px;
+           }
+           button:hover span:after {
+            opacity: 1;
+            right: 0;
+           }
 
         .inputGroup {
             font-family: 'Segoe UI', sans-serif;
@@ -91,7 +139,7 @@ export default function Home() {
             font-size: 100%;
             padding: 0.8em;
             outline: none;
-            border: 2px solid rgb(200, 200, 200);
+            border: 2px solid #FFFFFF;
             background-color: transparent;
             border-radius: 20px;
             width: 100%;
@@ -111,7 +159,7 @@ export default function Home() {
             margin: 0em;
             margin-left: 1.3em;
             padding: 0.4em;
-            background-color: #fafafa;
+            background-color: #FFFFFF;
         }
         .inputGroup :is(input:focus, input:valid) {
             border-color: rgb(150, 150, 200);
