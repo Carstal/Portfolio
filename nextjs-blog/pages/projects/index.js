@@ -41,7 +41,7 @@ export default function Home() {
           {/* TODO: Align image and info horizontally */}
             <div className='projectCard'>
                 {/* TODO: Display Image */}
-                <div className='projectImage'>Image</div>
+                <div className='projectImage'><div className='image'>Image</div></div>
                 {/* TODO: Display Info */}
                 <div className='projectInfo'>
                     {/* TODO: Align title and desc vertically */}
@@ -89,9 +89,17 @@ export default function Home() {
         }
         .projectImage {
             margin-top: 10px;
+            display: flex;
             height: 90%;
             width: 30%;
-            text-align: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .image {
+            display: flex;
+            width:80%;
+            height:100px;
+            background-color: black;
         }
         .projectTitle {
             height: 20%;
