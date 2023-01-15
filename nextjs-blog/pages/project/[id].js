@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css';
+import { useRouter } from "next/router";
 
 export default function Home() {
+    const router = useRouter();
     return (
     <div className={styles.container}>
     <Head>
@@ -33,23 +35,27 @@ export default function Home() {
                 Project Name
             </h1>
             <h3 className={styles.subtitle}>
-                Here are some of my favourites
+                Technologies used
             </h3>
             </div>
-          {/* Run .map on received JSON to Display all projects on DB */}
-            <div className='projectsView'>
+            <div className='projectView'>
           {/* TODO: Get list of all projects */}
-          {/* TODO: Align image and info horizontally */}
-            <div className='projectCard'>
-                {/* TODO: Display Image */}
-                <div className='projectImage'><div className='image'>Image</div></div>
-                {/* TODO: Display Info */}
-                <div className='projectInfo'>
-                    {/* TODO: Align title and desc vertically */}
-                    {/* TODO: Justify title and desc left */}
-                    <div className='projectTitle'>Project Name</div>
-                    <div className='projectDesc'>Description</div>
+            <div className='imgCarousel'>
+            {/* Carousel or single image of project */}
+            </div>
+          {/* Div for all project */}
+            <div className='projectInfo'>
+            <div className='projectDesc'>
+                Lorem Ipsum Desription
+            </div>
+            <div className='projectLinks'>
+                <div className='hostLink'>
+                    <a>Hosted link</a>
                 </div>
+                <div className='gitHub'>
+                    <a>GitHub Link</a>
+                </div>
+            </div>
             </div>
             </div>
         </div>
