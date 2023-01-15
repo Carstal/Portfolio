@@ -14,17 +14,20 @@ export default function Home() {
     <main>
         {/* Navigation Area */}
         <div className={styles.nav}>
-            <div>
-            <h4>
-                Carlo Staltari
+            <div className='name'>
+                <h4 className='firstName'>
+                    Carlo
+                </h4>
+                <h4 className='lastName'>
+                    Staltari
                 </h4>
             </div>
             <nav>
-            <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
+                <ul>
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </div>
 
@@ -72,6 +75,23 @@ export default function Home() {
         </footer>
 
         <style jsx>{`
+        // @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
+
+        .name {
+            font-size: 1.75rem;
+            font-family: 'Quattrocento', serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .firstName {
+            padding: 0;
+            margin: 0;
+        }
+        .lastName {
+            padding: 0;
+            margin: 0;
+        }
         .projectsView {
             display: flex;
             flex-direction: column;
