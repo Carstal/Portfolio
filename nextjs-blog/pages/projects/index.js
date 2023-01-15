@@ -36,6 +36,7 @@ export default function Home() {
               Here are some of my favourites
             </h3>
           </div>
+          {/* Run .map on received JSON to Display all projects on DB */}
           <div className='projectsView'>
           {/* TODO: Get list of all projects */}
           {/* TODO: Align image and info horizontally */}
