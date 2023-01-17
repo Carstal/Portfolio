@@ -1,3 +1,6 @@
+import React from "react";
+import styles from '../styles/Home.module.css';
+
 class Nav extends React.Component {
     render() {
     return(
@@ -9,14 +12,15 @@ class Nav extends React.Component {
     </div>
     <nav>
         <ul>
-        <li onClick={() => router.push({
-            pathname: './'})}>Home</li>
-        <li onClick={() => router.push({
-            pathname: '/projects'})}>Projects</li>
+        <li>Home</li>
+        <li>Projects</li>
         <li>Contact</li>
         </ul>
     </nav>
     </div>
     );
     }
+}
+export default function MyNav(){
+    return <Nav></Nav>;
 }

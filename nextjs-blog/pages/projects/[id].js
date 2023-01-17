@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css';
 import { useRouter } from "next/router";
+import MyNav from "../../components/nav.js";
 
 export default function Home() {
     const router = useRouter();
@@ -13,7 +14,8 @@ export default function Home() {
 
     <main>
         {/* Navigation Area */}
-        <div className={styles.nav}>
+        <MyNav></MyNav>
+        {/* <div className={styles.nav}>
             <div className='name'>
                 <h4 className='firstName'>
                     Carlo
@@ -29,7 +31,7 @@ export default function Home() {
                     <li>Contact</li>
                 </ul>
             </nav>
-        </div>
+        </div> */}
 
         {/* Body Area */}
         <div className={styles.body}>
@@ -143,19 +145,6 @@ export default function Home() {
             justify-content: center;
             align-items: center;
             width: 100%;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 5px;
-        }
-        li {
-            display: block;
-            height: 25px;
-            padding: S5px;
-        }
-        li:hover{
-            background-color: #000000;
         }
         footer {
             width: 100%;

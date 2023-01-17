@@ -103,3 +103,17 @@
     flex-direction: column;
   }
 }
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+.nav li{
+  display: block;
+  height: 25px;
+  padding: S5px;
+}
+.nav li:hover{
+  background-color: #000000;
+}
