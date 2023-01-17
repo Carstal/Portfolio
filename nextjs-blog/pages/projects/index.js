@@ -19,8 +19,10 @@ export default function Home() {
           </div>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Projects</li>
+              <li onClick={() => router.push({
+                pathname: './'})}>Home</li>
+              <li onClick={() => router.push({
+                pathname: '/projects'})}>Projects</li>
               <li>Contact</li>
             </ul>
           </nav>
