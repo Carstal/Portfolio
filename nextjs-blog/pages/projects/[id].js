@@ -55,6 +55,10 @@ export default function Home() {
             </div>
             <div className='projectLinks'>
                 <div className='hostLink'>
+                    <div className="card">
+                        <div className="card2">
+                        </div>
+                    </div>
                     <a>Hosted link</a>
                 </div>
                 <div className='gitHub'>
@@ -80,6 +84,30 @@ export default function Home() {
         // @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
 
+        .card {
+            width: 190px;
+            height: 100px;
+            background-image: linear-gradient(163deg, #7500ff 0%, #7500ff 100%);
+            border-radius: 20px;
+            transition: all .3s;
+        }
+
+        .card2 {
+            width: 190px;
+            height: 100px;
+            background-color: #3a3a3a;
+            border-radius: 20px;
+            transition: all .2s;
+        }
+
+        .card2:hover {
+            transform: scale(0.98);
+            border-radius: 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 30px 1px rgba(33, 33, 33, 0.50);
+        }
         .name {
             font-size: 1.75rem;
             font-family: 'Quattrocento', serif;
