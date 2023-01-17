@@ -51,18 +51,18 @@ export default function Home() {
           {/* Div for all project */}
             <div className='projectInfo'>
             <div className='projectDesc'>
-                Lorem Ipsum Desription
+                Lorem Ipsum Description
             </div>
             <div className='projectLinks'>
                 <div className='hostLink'>
-                    <div className="card">
-                        <div className="card2">
-                            <img src='../../public/github-logo-vector.svg' alt='Github Image'/>
-                        </div>
-                    </div>
                     <a>Hosted link</a>
                 </div>
                 <div className='gitHub'>
+                    <div className="card">
+                        <div className="card2">
+                            <img src='../../public/github-logo-vec' alt='Github Image' width="180" height="65"/>
+                        </div>
+                    </div>
                     <a>GitHub Link</a>
                 </div>
             </div>
