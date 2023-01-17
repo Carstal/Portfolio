@@ -57,6 +57,7 @@ export default function Home() {
                 <div className='hostLink'>
                     <div className="card">
                         <div className="card2">
+                            <img src='../../public/github-logo-vector.svg' alt='Github Image'/>
                         </div>
                     </div>
                     <a>Hosted link</a>
@@ -85,19 +86,27 @@ export default function Home() {
         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
 
         .card {
-            width: 190px;
-            height: 100px;
+            width: 200px;
+            height: 75px;
             background-image: linear-gradient(163deg, #7500ff 0%, #7500ff 100%);
             border-radius: 20px;
             transition: all .3s;
         }
 
         .card2 {
-            width: 190px;
-            height: 100px;
+            width: 200px;
+            height: 75px;
             background-color: #3a3a3a;
             border-radius: 20px;
             transition: all .2s;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .card2 img {
+            display:flex;
+            height: 90px;
+            width: 175px;
         }
 
         .card2:hover {
