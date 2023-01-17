@@ -43,7 +43,7 @@ export default function Home() {
                 Technologies used
             </h3>
             </div>
-            <div className='projectView'>
+        <div className='projectView'>
           {/* TODO: Get list of all projects */}
             <div className='imgCarousel'>
             {/* Carousel or single image of project */}
@@ -62,7 +62,7 @@ export default function Home() {
                 </div>
             </div>
             </div>
-            </div>
+        </div>
         </div>
         </main>
 
@@ -94,9 +94,9 @@ export default function Home() {
             padding: 0;
             margin: 0;
         }
-        .projectsView {
+        .projectView {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             width: 100%;
             margin: auto;
@@ -112,7 +112,7 @@ export default function Home() {
         .projectInfo{
             margin-top: 10px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             width: 70%;
             height: 90%;
         }
@@ -123,6 +123,14 @@ export default function Home() {
             width: 30%;
             align-content: center;
             justify-content: center;
+        }
+
+        .projectLinks{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 90%;
         }
         .image {
             display: flex;
@@ -135,6 +143,7 @@ export default function Home() {
             font-weight: bold;
         }
         .projectDesc {
+            display: flex;
             height: 80%;
         }
         main {
@@ -145,10 +154,11 @@ export default function Home() {
             justify-content: center;
             align-items: center;
             width: 100%;
+            height: 95vh;
         }
         footer {
             width: 100%;
-            height: 50px;
+            height: 5vh;
             border-top: 1px solid #eaeaea;
             display: flex;
             justify-content: center;

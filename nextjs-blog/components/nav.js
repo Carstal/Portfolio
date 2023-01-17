@@ -6,9 +6,14 @@ class Nav extends React.Component {
     return(
     <div className={styles.nav}>
     <div>
-        <h4>
-        Carlo Staltari
-        </h4>
+        <div className={styles.name}>
+            <h4 className={styles.firstName}>
+                Carlo
+            </h4>
+            <h4 className={styles.lastName}>
+                Staltari
+            </h4>
+        </div>
     </div>
     <nav>
         <ul>
