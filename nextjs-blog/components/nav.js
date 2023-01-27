@@ -5,6 +5,7 @@ class Nav extends React.Component {
     render() {
     return(
     <div className={styles.nav}>
+    {/* // <div className={styles.sidebar}> */}
     <div>
         <div className={styles.name}>
             <h4 className={styles.firstName}>
