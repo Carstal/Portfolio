@@ -14,10 +14,10 @@ export async function getServerSideProps() {
 export default function Home({cards}) {
     const [showModal, setShowModal] = useState(false);
 
-    // const handleSelectCard = useCallback(
-    // (card) => window.alert(card.name),
-    // []
-    // )
+    const handleSelectCard = useCallback(
+    (card) => window.alert(card.name),
+    []
+    )
     return (
     <div className="container">
         <Head>
@@ -29,7 +29,9 @@ export default function Home({cards}) {
         <header className={styles.header}><h1>LOB Cards</h1></header>
         <div className={styles.container}>
         {cards.data.map((card) => (
-            <Card card={card}/>
+            <div className={styles.card} onClick={handleSelectCard}>
+                <Card card={card}/>
+            </div>
         ))}
         </div>
         <Modal show={showModal} onClose={() => setShowModal(false)}>
