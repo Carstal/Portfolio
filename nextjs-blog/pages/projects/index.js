@@ -1,5 +1,14 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css';
+import ProjectCard from '../../components/ProjectCard';
+
+export async function getServerSideProps() {
+  const res = await fetch("http://localhost:3000/api/project");
+  const projects = await res.json();
+
+  // console.log(visits)
+  return { props: { projects }};
+}
 
 export default function Home() {
   return (
@@ -41,18 +50,9 @@ export default function Home() {
           {/* Run .map on received JSON to Display all projects on DB */}
           <div className='projectsView'>
           {/* TODO: Get list of all projects */}
-          {/* TODO: Align image and info horizontally */}
-            <div className='projectCard'>
-                {/* TODO: Display Image */}
-                <div className='projectImage'><div className='image'>Image</div></div>
-                {/* TODO: Display Info */}
-                <div className='projectInfo'>
-                    {/* TODO: Align title and desc vertically */}
-                    {/* TODO: Justify title and desc left */}
-                    <div className='projectTitle'>Project Name</div>
-                    <div className='projectDesc'>Description</div>
-                </div>
-            </div>
+                {projects.map((project)=>(
+                  <ProjectCard project={project}/>
+                ))}
           </div>
         </div>
       </main>
