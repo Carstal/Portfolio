@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Card from '../../components/cardCard';
 import styles from '../../styles/ygo.module.css'
 import Modal from '../../components/CardModal';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 export async function getServerSideProps() {
     const res = await fetch("https://db.ygoprodeck.com/api/v7/cardinfo.php?&startdate=03/08/2002&enddate=03/09/2002&dateregion=tcg_date");
@@ -13,6 +13,11 @@ export async function getServerSideProps() {
 
 export default function Home({cards}) {
     const [showModal, setShowModal] = useState(false);
+
+    // const handleSelectCard = useCallback(
+    // (card) => window.alert(card.name),
+    // []
+    // )
     return (
     <div className="container">
         <Head>
@@ -24,7 +29,7 @@ export default function Home({cards}) {
         <header className={styles.header}><h1>LOB Cards</h1></header>
         <div className={styles.container}>
         {cards.data.map((card) => (
-            <Card card={card} key={card.id}/>
+            <Card card={card}/>
         ))}
         </div>
         <Modal show={showModal} onClose={() => setShowModal(false)}>
