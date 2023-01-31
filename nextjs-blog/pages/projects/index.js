@@ -10,7 +10,7 @@ export async function getServerSideProps() {
   return { props: { projects }};
 }
 
-export default function Home() {
+export default function Home({projects}) {
   return (
     <div className={styles.container}>
       <Head>
