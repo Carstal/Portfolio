@@ -12,13 +12,13 @@ async function getAllProjects(){
     .collection("Project")
     .find({}).toArray();
     if (results) {
-    console.log("Returning all listings in db");
-    console.log(results);
+    // console.log("Returning all listings in db");
+    // console.log(results);
 
     return results;
     }
     else {
-    console.log("No listings received");
+    // console.log("No listings received");
 
     return {error:"Failed to retrieve any projects"};
     }

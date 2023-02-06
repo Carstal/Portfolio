@@ -3,7 +3,18 @@ import styles from '../../styles/Home.module.css';
 import { useRouter } from "next/router";
 import MyNav from "../../components/nav.js";
 
-export default function Home() {
+export async function getServerSideProps(context) {
+    const api = "http://localhost:3000/api/project/";
+    const id = context.params.id;
+    const url = api + id;
+    const res = await fetch(url);
+    const project = await res.json();
+
+    // console.log(visits)
+    return { props: { project }};
+}
+
+export default function Home({project}) {
     const router = useRouter();
     return (
     <div className={styles.container}>
@@ -15,55 +26,38 @@ export default function Home() {
     <main>
         {/* Navigation Area */}
         <MyNav></MyNav>
-        {/* <div className={styles.nav}>
-            <div className='name'>
-                <h4 className='firstName'>
-                    Carlo
-                </h4>
-                <h4 className='lastName'>
-                    Staltari
-                </h4>
-            </div>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div> */}
 
         {/* Body Area */}
         <div className={styles.body}>
             <div id="name">
             <h1 className={styles.title}>
-                Project Name
+                {project.name}
             </h1>
             <h3 className={styles.subtitle}>
-                Technologies used
+                Technologies used: {project.tech}
             </h3>
             </div>
         <div className='projectView'>
           {/* TODO: Get list of all projects */}
             <div className='imgCarousel'>
             {/* Carousel or single image of project */}
+            <img src={project.img} alt="Project Image" height="500"/>
             </div>
           {/* Div for all project */}
             <div className='projectInfo'>
             <div className='projectDesc'>
-                Lorem Ipsum Description
+                {project.desc}
             </div>
             <div className='projectLinks'>
                 <div className='hostLink'>
-                    <a>Hosted link</a>
+                    <a href="">Hosted link</a>
                 </div>
                 <div className='gitHub'>
-                    <div className="card">
+                    <div className="card" href={project.github}>
                         <div className="card2">
                             <img src='../../public/github-logo-vec' alt='Github Image' width="180" height="65"/>
                         </div>
                     </div>
-                    <a>GitHub Link</a>
                 </div>
             </div>
             </div>
