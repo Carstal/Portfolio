@@ -1,16 +1,18 @@
-import Head from 'next/head'
-import styles from '../../styles/Home.module.css';
-import ProjectCard from '../../components/ProjectCard';
+import Head from "next/head";
+import styles from "../../styles/Home.module.css";
+import projects from "../../styles/Projects.module.css";
+import ProjectCard from "../../components/ProjectCard";
+import HeaderAndNav from "../../components/HeaderAndNav";
 
-export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/project");
-  const projects = await res.json();
+// export async function getServerSideProps() {
+//   const res = await fetch("http://localhost:3000/api/project");
+//   const projectData = await res.json();
 
-  // console.log(visits)
-  return { props: { projects }};
-}
+//   // console.log(visits)
+//   return { props: { projectData } };
+// }
 
-export default function Home({projects}) {
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,100 +21,67 @@ export default function Home({projects}) {
       </Head>
 
       <main>
-        {/* Navigation Area */}
-        <div className={styles.nav}>
-          <div>
-            <h4>
-              Carlo Staltari
-              </h4>
-          </div>
-          <nav>
-            <ul>
-              <li onClick={() => router.push({
-                pathname: './'})}>Home</li>
-              <li onClick={() => router.push({
-                pathname: '/projects'})}>Projects</li>
-              <li>Contact</li>
-            </ul>
-          </nav>
-        </div>
-
-        {/* Body Area */}
         <div className={styles.body}>
-          <div id="name">
-            <h1 className={styles.title}>
-              Projects
-            </h1>
-            <h3 className={styles.subtitle}>
-              Here are some of my favourites
-            </h3>
-          </div>
-          {/* Run .map on received JSON to Display all projects on DB */}
-          <div className='projectsView'>
-          {/* TODO: Get list of all projects */}
-                {projects.map((project)=>(
-                  <ProjectCard project={project}/>
-                ))}
+          <HeaderAndNav></HeaderAndNav>
+
+          {/* Body Area */}
+          <div className={styles.body}>
+            <div className={projects.ProjectContainer}>
+              {/* Run .map on received JSON to Display all projects on DB */}
+                {/* TODO: Get list of all projects */}
+                <div className={projects.ProjectCard}>
+                  <div className={projects.ProjectCardImg}></div>
+                  <div className={projects.ProjectCardDesc}>
+                    <div className={projects.ProjectCardTitleContainer}>
+                      <div className={projects.ProjectCardTitle}>Title</div>
+                      <div className={projects.ProjectCardSubtitle}>Subtitle</div>
+                    </div>
+                    <div className={projects.ProjectCardTechContainer}>
+                      <div className={projects.ProjectCardTech}>Next.js</div>
+                      <div className={projects.ProjectCardTech}>Python</div>
+                    </div>
+                  </div>
+                </div>
+                {/* {projectData.map((e) => (
+                  <ProjectCard project={e} />
+                ))} */}
+                <div className={projects.ProjectCard}>
+                  <div className={projects.ProjectCardImg}></div>
+                  <div className={projects.ProjectCardDesc}>
+                    <div className={projects.ProjectCardTitleContainer}>
+                      <div className={projects.ProjectCardTitle}>Title</div>
+                      <div className={projects.ProjectCardSubtitle}>Subtitle</div>
+                    </div>
+                    <div className={projects.ProjectCardIconContainer}>
+                      <div className={projects.ProjectCardIcon}></div>
+                      <div className={projects.ProjectCardIcon}></div>
+                      <div className={projects.ProjectCardIcon}></div>
+                      <div className={projects.ProjectCardIcon}></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={projects.ProjectCard}>
+                  <div className={projects.ProjectCardImg}></div>
+                  <div className={projects.ProjectCardDesc}>
+                    <div className={projects.ProjectCardTitleContainer}>
+                      <div className={projects.ProjectCardTitle}>Title</div>
+                      <div className={projects.ProjectCardSubtitle}>Subtitle</div>
+                    </div>
+                    <div className={projects.ProjectCardTechContainer}>
+                      <div className={projects.ProjectCardTech}>Next.js</div>
+                      <div className={projects.ProjectCardTech}>Python</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://github.com/Carstal"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Created & Maintained by Carlo Staltari
-        </a>
-      </footer>
-
       <style jsx>{`
-        .projectsView {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            margin: auto;
-        }
-        .projectCard {
-            display: flex;
-            flex-direction: row;
-            width: 60%;
-            height: 200px;
-            border: 2px solid #555555;
-            border-radius: 30px;
-        }
-        .projectInfo{
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            height: 90%;
-        }
-        .projectImage {
-            margin-top: 10px;
-            display: flex;
-            height: 90%;
-            width: 30%;
-            align-content: center;
-            justify-content: center;
-        }
-        .image {
-            display: flex;
-            width:80%;
-            height:100px;
-            background-color: black;
-        }
-        .projectTitle {
-            height: 20%;
-            font-weight: bold;
-        }
-        .projectDesc {
-            height: 80%;
-        }
         main {
-          padding: 5rem 0;
+          padding: 0;
           flex: 1;
           display: flex;
           flex-direction: row;
@@ -130,7 +99,7 @@ export default function Home({projects}) {
           height: 25px;
           padding: S5px;
         }
-        li:hover{
+        li:hover {
           background-color: #000000;
         }
         footer {
@@ -177,5 +146,5 @@ export default function Home({projects}) {
         }
       `}</style>
     </div>
-  )
+  );
 }
