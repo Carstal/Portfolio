@@ -58,7 +58,8 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-                <div className={styles.socialIcon}>
+                <a href="https://www.linkedin.com/in/carstal/" className={styles.socialIcon}>
+                  {/* LinkedIn */}
                   <svg
                     width="50"
                     height="50"
@@ -78,8 +79,9 @@ export default function Home() {
                       </clipPath>
                     </defs>
                   </svg>
-                </div>
-                <div className={styles.socialIcon}>
+                </a>
+                <a href="https://github.com/Carstal/" className={styles.socialIcon}>
+                  {/* GitHub */}
                   <svg
                     width="50"
                     height="50"
@@ -92,8 +94,9 @@ export default function Home() {
                       fill="black"
                     />
                   </svg>
-                </div>
-                <div className={styles.socialIcon}>
+                </a>
+                <a href="https://www.instagram.com/carlostaltari/" className={styles.socialIcon}>
+                  {/* Instagram */}
                   <svg
                     width="50"
                     height="50"
@@ -113,7 +116,7 @@ export default function Home() {
                       </clipPath>
                     </defs>
                   </svg>
-                </div>
+                </a>
               </div>
             </div>
           </div>

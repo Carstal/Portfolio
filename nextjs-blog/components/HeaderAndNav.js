@@ -9,7 +9,7 @@ class HeaderAndNav extends React.Component {
         <h1 className={styles.headerTitle}>CARLO</h1>
         <Spacer height={"15px"} />
         <div className={styles.nav}>
-          <div className={styles.navItem}>
+          <a href="/" className={styles.navItem}>
             <label>HOME</label>
             <div className={styles.navIcon}>
               <svg
@@ -32,8 +32,8 @@ class HeaderAndNav extends React.Component {
                 </defs>
               </svg>
             </div>
-          </div>
-          <div className={styles.navItem}>
+          </a>
+          <a href="/about" className={styles.navItem}>
             <label>ABOUT</label>
             <div className={styles.navIcon}>
               <svg
@@ -56,8 +56,8 @@ class HeaderAndNav extends React.Component {
                 </defs>
               </svg>
             </div>
-          </div>
-          <div className={styles.navItem}>
+          </a>
+          <a href="/projects" className={styles.navItem}>
             <label>PROJECTS</label>
             <div className={styles.navIcon}>
               <svg
@@ -80,8 +80,8 @@ class HeaderAndNav extends React.Component {
                 </defs>
               </svg>
             </div>
-          </div>
-          <div className={styles.navItem}>
+          </a>
+          <a href="/contact" className={styles.navItem}>
             <label>CONTACT</label>
             <div className={styles.navIcon}>
               <svg
@@ -106,7 +106,7 @@ class HeaderAndNav extends React.Component {
                 </defs>
               </svg>
             </div>
-          </div>
+          </a>
         </div>
         <Spacer height={"10px"} />
       </div>

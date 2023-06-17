@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export default function LinkedInBtn() {
   return (
-    <div className={styles.resumeBtn}>
+    <a href="https://www.linkedin.com/in/carstal/" className={styles.resumeBtn}>
     <span className={styles.resumeBtnText}>LinkedIn</span>
     <div className={styles.resumeIcon}>
     <svg
@@ -26,6 +26,6 @@ export default function LinkedInBtn() {
                     </defs>
                   </svg>
     </div>
-  </div>
+  </a>
   );
 }

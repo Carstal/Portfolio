@@ -136,13 +136,20 @@
   font-size: 32px;
   font-weight: bold;
   height: 60px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
 }
 .navItem:hover{
-  background-color: purple;
+  background-color: blueviolet;
+  cursor: pointer;
 }
 
 .navItem label{
   margin-right: 10px;
+}
+.navItem label:hover {
+  cursor: pointer;
 }
 
 .indexMain{
@@ -207,7 +214,8 @@
   margin-right: 5%;
   margin-left: 5%;
 }
-.socialsContainer div{
+.socialsContainer div,
+.socialsContainer a {
   margin-right: 5px;
   margin-bottom: 5px;
 }
@@ -220,10 +228,13 @@
   align-items: center;
   justify-content: center;
   width: 225px;
-  height: 75px
+  height: 75px;
+  text-decoration: none;
+  color: black;
 }
 .resumeBtn:hover{
   background-color: blueviolet;
+  cursor: pointer;
 }
 
 .resumeBtnText {
@@ -247,7 +258,8 @@
   align-items: center;
 }
 .socialIcon:hover{
-  background-color: purple;
+  background-color: blueviolet;
+  cursor: pointer;
 }
 
 .imgFrame{
