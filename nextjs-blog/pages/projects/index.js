@@ -26,54 +26,26 @@ export default function Home() {
 
           {/* Body Area */}
           <div className={styles.body}>
+            <div className={projects.ProjectTabContainer}>
+              <div className={projects.ProjectTab}>
+                All
+              </div>
+              <div className={projects.ProjectTab}>
+                School
+              </div>
+              <div className={projects.ProjectTab}>
+                Personal
+              </div>
+            </div>
             <div className={projects.ProjectContainer}>
               {/* Run .map on received JSON to Display all projects on DB */}
                 {/* TODO: Get list of all projects */}
-                <div className={projects.ProjectCard}>
-                  <div className={projects.ProjectCardImg}></div>
-                  <div className={projects.ProjectCardDesc}>
-                    <div className={projects.ProjectCardTitleContainer}>
-                      <div className={projects.ProjectCardTitle}>Title</div>
-                      <div className={projects.ProjectCardSubtitle}>Subtitle</div>
-                    </div>
-                    <div className={projects.ProjectCardTechContainer}>
-                      <div className={projects.ProjectCardTech}>Next.js</div>
-                      <div className={projects.ProjectCardTech}>Python</div>
-                    </div>
-                  </div>
-                </div>
-                {/* {projectData.map((e) => (
-                  <ProjectCard project={e} />
-                ))} */}
-                <div className={projects.ProjectCard}>
-                  <div className={projects.ProjectCardImg}></div>
-                  <div className={projects.ProjectCardDesc}>
-                    <div className={projects.ProjectCardTitleContainer}>
-                      <div className={projects.ProjectCardTitle}>Title</div>
-                      <div className={projects.ProjectCardSubtitle}>Subtitle</div>
-                    </div>
-                    <div className={projects.ProjectCardIconContainer}>
-                      <div className={projects.ProjectCardIcon}></div>
-                      <div className={projects.ProjectCardIcon}></div>
-                      <div className={projects.ProjectCardIcon}></div>
-                      <div className={projects.ProjectCardIcon}></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className={projects.ProjectCard}>
-                  <div className={projects.ProjectCardImg}></div>
-                  <div className={projects.ProjectCardDesc}>
-                    <div className={projects.ProjectCardTitleContainer}>
-                      <div className={projects.ProjectCardTitle}>Title</div>
-                      <div className={projects.ProjectCardSubtitle}>Subtitle</div>
-                    </div>
-                    <div className={projects.ProjectCardTechContainer}>
-                      <div className={projects.ProjectCardTech}>Next.js</div>
-                      <div className={projects.ProjectCardTech}>Python</div>
-                    </div>
-                  </div>
-                </div>
+                <ProjectCard/>
+                <ProjectCard/>
+                <ProjectCard/>
+                <ProjectCard/>
+                <ProjectCard/>
+                <ProjectCard/>
             </div>
           </div>
         </div>

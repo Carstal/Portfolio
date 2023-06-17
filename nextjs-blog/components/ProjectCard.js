@@ -1,25 +1,20 @@
 import React from "react";
-import styles from "../styles/ProjectCard.module.css";
-import { useRouter } from "next/router";
+import projects from "../styles/Projects.module.css";
 
-export default function ProjectCard({ project }) {
-const router = useRouter()
-return (
-    <div className={styles.projectCard} onClick={() => router.push({
-        pathname: '/projects/[id]', query: { id: project.project_id}})}>
-    {/* TODO: Display Image */}
-    <div className={styles.projectImage}>
-        {/* <div className={styles.image}>Image</div> */}
-        <img className={styles.image} src={project.img} alt="Image" />
+export default function ProjectCard() {
+  return (
+    <div className={projects.ProjectCard}>
+      <div className={projects.ProjectCardImg}></div>
+      <div className={projects.ProjectCardDesc}>
+        <div className={projects.ProjectCardTitleContainer}>
+          <div className={projects.ProjectCardTitle}>Title</div>
+          <div className={projects.ProjectCardSubtitle}>Subtitle</div>
+        </div>
+        <div className={projects.ProjectCardTechContainer}>
+          <div className={projects.ProjectCardTech}>Next.js</div>
+          <div className={projects.ProjectCardTech}>Python</div>
+        </div>
+      </div>
     </div>
-    {/* TODO: Display Info */}
-    <div className={styles.projectInfo}>
-        {/* TODO: Align title and desc vertically */}
-        {/* TODO: Justify title and desc left */}
-        <div className={styles.projectTitle}>{project.name}</div>
-        <div className={styles.projectDesc}>{project.desc}</div>
-    </div>
-    </div>
-    );
-
+  );
 }
