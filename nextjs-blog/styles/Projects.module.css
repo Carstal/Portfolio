@@ -3,7 +3,7 @@
     height: fit-content;
     border: 5px solid black;
     border-radius: 0px 25px 25px 25px;
-    /* margin: 25px 0px; */
+    margin-bottom: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,6 +16,10 @@
     border: 5px solid black;
     border-radius: 20px;
     margin: 25px;
+}
+
+.ProjectCard:hover {
+    cursor: pointer;
 }
 
 .ProjectCardImg {
@@ -122,4 +126,53 @@
 .ProjectTab:hover {
     cursor: pointer;
     background-color: blueviolet;
+}
+
+
+@media (max-width: 925px) {
+    .ProjectTab {
+        width: 30%;
+        max-width: 200px;
+        min-width: 110px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .ProjectContainer {
+        min-width: 325px;
+    }
+
+    .ProjectCard {
+        min-width: 325px;
+        margin: 5px;
+    }
+
+    .ProjectCardImg {
+        min-width: 300px;
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .ProjectCardDesc {
+        width: 90%;
+        margin: 5px 5%;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .ProjectTab {
+        width: 33%;
+    }
+
+    .ProjectTabContainer {
+        justify-content: space-between;
+    }
+
+    .ProjectContainer {
+        min-width: 325px;
+        border-radius: 0px 0px 25px 25px;
+    }
 }

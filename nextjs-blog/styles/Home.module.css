@@ -52,7 +52,7 @@
   width: 80vw;
   min-width: 925px;
   max-width: 1250px;
-  height: 100vh;
+  height: fit-content;
 }
 
 .title,
@@ -299,9 +299,34 @@
   background-color: black;
 }
 
-@media (max-width: 600px) {
+.MobileNav {
+  display: none;
+}
+
+@media (max-width: 925px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 350px;
+    height: fit-content;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .MobileNav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
   }
 }

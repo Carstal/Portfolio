@@ -108,6 +108,9 @@ class HeaderAndNav extends React.Component {
             </div>
           </a>
         </div>
+        <div className={styles.MobileNav}>
+            Nav
+        </div>
         <Spacer height={"10px"} />
       </div>
     );
