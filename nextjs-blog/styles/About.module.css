@@ -1,13 +1,14 @@
 .InfoRow {
     width: 95%;
-    margin: 10px auto;
+    margin: 10px auto 0px;
     height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .BlurbContainer {
-    height: 160px;
+    height: fit-content;
+    min-height: 160px;
     width: 75%;
     /* background-color: aquamarine; */
     border: 5px solid black;
@@ -15,12 +16,32 @@
     margin: 5px 0px;
 }
 
+.BlurbHeader {
+    height: fit-content;
+    width: fit-content;
+    padding: 3px 6px;
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.BlurbContent {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 .ResumeContainer {
     width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .ResumeContainer div {
@@ -40,9 +61,10 @@
 .Work {
     width: 95%;
     height: fit-content;
-    min-height: 200px;
-    margin-top: 5px;
+    min-height: 75px;
+    margin-bottom: 10px;
     border: 5px solid black;
+    border-radius: 5px;
 }
 
 .WorkHeader {
@@ -77,4 +99,23 @@
     font-size: 21px;
     font-weight: bold;
     margin-left: 25px;
+}
+
+.ExtraRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 5px;
+    flex-wrap: wrap;
+    /* margin-bottom: 5px; */
+}
+
+.Label {
+    padding: 2px 3px;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 21px;
+    font-weight: bold;
 }

@@ -42,7 +42,11 @@ export default function Home() {
             <div className={projects.ProjectContainer}>
                 <div className={about.InfoRow}>
                     <div className={about.BlurbContainer}>
-
+                        <div className={about.BlurbHeader}>Current Position: Jr Software Developer</div>
+                        <div className={about.BlurbContent}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
                     </div>
                     <div className={about.ResumeContainer}>
                         <ResumeBtn/>
@@ -91,6 +95,63 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={about.RightSide}>
+
+                    <div className={about.Work}>
+                            <div className={about.WorkHeader}>Languages</div>
+                            <div className={about.WorkContainer}>
+                                <div className={about.ExtraRow}>
+                                    <div className={about.Label}>English</div>
+                                    <div className={about.Label}>French</div>
+                                    <div className={about.Label}>Italian</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div className={about.Work}>
+                            <div className={about.WorkHeader}>Programming Languages</div>
+                            <div className={about.WorkContainer}>
+                                <div className={about.ExtraRow}>
+                                    <div className={about.Label}>HTML</div>
+                                    <div className={about.Label}>CSS</div>
+                                    <div className={about.Label}>JavaScript</div>
+                                    <div className={about.Label}>TypeScript</div>
+                                    <div className={about.Label}>PHP</div>
+                                    <div className={about.Label}>Java</div>
+                                    <div className={about.Label}>Python</div>
+                                    <div className={about.Label}>C#</div>
+                                    <div className={about.Label}>Kotlin</div>
+                                    <div className={about.Label}>Swift</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div className={about.Work}>
+                            <div className={about.WorkHeader}>Frameworks</div>
+                            <div className={about.WorkContainer}>
+                                <div className={about.ExtraRow}>
+                                    <div className={about.Label}>jQuery</div>
+                                    <div className={about.Label}>Angular</div>
+                                    <div className={about.Label}>React</div>
+                                    <div className={about.Label}>NodeJS</div>
+                                    <div className={about.Label}>Next.js</div>
+                                    <div className={about.Label}>Backbone.js</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={about.Work}>
+                            <div className={about.WorkHeader}>Infrastructure</div>
+                            <div className={about.WorkContainer}>
+                                <div className={about.ExtraRow}>
+                                    <div className={about.Label}>Azure</div>
+                                    <div className={about.Label}>AWS</div>
+                                    <div className={about.Label}>MongoDB</div>
+                                    <div className={about.Label}>Firebase</div>
+                                    <div className={about.Label}>SQL</div>
+                                    <div className={about.Label}>MySQL</div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

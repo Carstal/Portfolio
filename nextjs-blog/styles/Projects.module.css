@@ -118,3 +118,8 @@
     font-size: 32px;
     font-weight: bold;
 }
+
+.ProjectTab:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
