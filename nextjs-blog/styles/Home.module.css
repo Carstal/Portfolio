@@ -329,4 +329,8 @@
     font-size: 28px;
     font-weight: bold;
   }
+
+  .MobileNav:hover {
+    cursor: pointer;
+  }
 }
