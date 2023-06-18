@@ -144,7 +144,7 @@ export default function Home() {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          align-items: center;
+          align-items: start;
           width: 100%;
         }
         ul {

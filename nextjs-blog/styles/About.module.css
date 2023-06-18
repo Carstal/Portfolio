@@ -21,10 +21,10 @@
     font-weight: bold;
 }
 
-.AboutTab:hover {
+/* .AboutTab:hover {
     cursor: pointer;
     background-color: blueviolet;
-}
+} */
 
 .AboutContainer {
     width: 100%;

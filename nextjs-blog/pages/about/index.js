@@ -32,9 +32,9 @@ export default function Home() {
               <div className={about.AboutTab}>
                 History
               </div>
-              <div className={about.AboutTab}>
+              {/* <div className={about.AboutTab}>
                 Hobbies
-              </div>
+              </div> */}
               {/* <div className={projects.ProjectTab}>
                 ...
               </div> */}
@@ -44,8 +44,9 @@ export default function Home() {
                     <div className={about.BlurbContainer}>
                         <div className={about.BlurbHeader}>Current Position: Jr Software Developer</div>
                         <div className={about.BlurbContent}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Recent graduate with a passion for innovation and improvement.<br/>
+                        Analytical thinker with a strong foundation in software development.<br/>
+                        Proficient in UX design and front-end development.
                         </div>
                     </div>
                     <div className={about.ResumeContainer}>
@@ -135,6 +136,8 @@ export default function Home() {
                                     <div className={about.Label}>NodeJS</div>
                                     <div className={about.Label}>Next.js</div>
                                     <div className={about.Label}>Backbone.js</div>
+                                    <div className={about.Label}>.NET</div>
+                                    <div className={about.Label}>Spring Boot</div>
                                 </div>
                             </div>
                         </div>
@@ -149,6 +152,8 @@ export default function Home() {
                                     <div className={about.Label}>Firebase</div>
                                     <div className={about.Label}>SQL</div>
                                     <div className={about.Label}>MySQL</div>
+                                    <div className={about.Label}>Docker</div>
+                                    <div className={about.Label}>Git</div>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +172,7 @@ export default function Home() {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          align-items: center;
+          align-items: start;
           width: 100%;
         }
         ul {

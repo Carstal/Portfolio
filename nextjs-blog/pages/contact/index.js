@@ -25,35 +25,6 @@ export default function Home() {
 
           {/* Body Area */}
           <div className={styles.body}>
-            <div className={contact.ContactBox}>
-              <div className={contact.ContactHeader}>Call Me</div>
-              <div className={contact.ContactContainer}>
-                <div className={contact.ContactText}>(438) 823-3677</div>
-                <div className={contact.ContactIcon}>
-                  <svg
-                    width="50"
-                    height="50"
-                    viewBox="0 0 50 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_4_108)">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5.89063 1.59685C6.43743 1.05087 7.09401 0.62734 7.81687 0.354314C8.53973 0.0812885 9.31237 -0.0349959 10.0836 0.0131673C10.8548 0.0613304 11.6069 0.272841 12.2902 0.633683C12.9735 0.994525 13.5723 1.49646 14.0469 2.10622L19.6563 9.31247C20.6844 10.6343 21.0469 12.3562 20.6406 13.9812L18.9313 20.825C18.8429 21.1794 18.8477 21.5507 18.9451 21.9028C19.0426 22.2549 19.2294 22.5758 19.4875 22.8343L27.1656 30.5125C27.4245 30.7711 27.7459 30.9582 28.0986 31.0557C28.4513 31.1532 28.8232 31.1577 29.1781 31.0687L36.0188 29.3593C36.8207 29.1588 37.6577 29.1433 38.4665 29.3138C39.2753 29.4843 40.0348 29.8365 40.6875 30.3437L47.8938 35.95C50.4844 37.9656 50.7219 41.7937 48.4031 44.1093L45.1719 47.3406C42.8594 49.6531 39.4031 50.6687 36.1813 49.5343C27.935 46.6329 20.4477 41.912 14.275 35.7218C8.08528 29.55 3.36441 22.0639 0.462507 13.8187C-0.668743 10.6 0.346882 7.1406 2.65938 4.8281L5.89063 1.59685Z"
-                        fill="black"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_4_108">
-                        <rect width="50" height="50" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
-            </div>
 
             <div className={contact.ContactBox}>
               <div className={contact.ContactHeader}>Email Me</div>
@@ -75,6 +46,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </main>
@@ -86,7 +58,7 @@ export default function Home() {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          align-items: center;
+          align-items: start;
           width: 100%;
         }
         ul {

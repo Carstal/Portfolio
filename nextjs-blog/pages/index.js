@@ -138,7 +138,7 @@ export default function Home() {
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: start;
           align-items: center;
           width: 100%;
         }
