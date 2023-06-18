@@ -9,7 +9,7 @@ const client = new MongoClient(mongouri);
 async function getAllProjects(){
     const results = await client
     .db("Portfolio")
-    .collection("Project")
+    .collection("Projects")
     .find({}).toArray();
     if (results) {
     // console.log("Returning all listings in db");
