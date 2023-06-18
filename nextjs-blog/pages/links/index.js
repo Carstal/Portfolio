@@ -62,7 +62,7 @@ export default function Home() {
                 </div>
               </a>
 
-              <a href="#" className={link.LinkBtn}>
+              <a href="https://www.linkedin.com/in/carstal/" className={link.LinkBtn}>
                 <span className={link.LinkText}>LinkedIn</span>
                 <div className={link.LinkIcon}>
                     <svg
@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
               </a>
 
-              <a href="#" className={link.LinkBtn}>
+              <a href="https://github.com/Carstal/" className={link.LinkBtn}>
                 <span className={link.LinkText}>GitHub</span>
                 <div className={link.LinkIcon}>
                   {/* GitHub */}
@@ -106,7 +106,7 @@ export default function Home() {
                 </div>
               </a>
 
-              <a href="#" className={link.LinkBtn}>
+              <a href="https://www.instagram.com/carlostaltari/" className={link.LinkBtn}>
                 <span className={link.LinkText}>Instagram</span>
                 <div className={link.LinkIcon}>
                   {/* Instagram */}
