@@ -28,18 +28,18 @@ export default function Home() {
 
           {/* Body Area */}
           <div className={styles.body}>
-            <div className={projects.ProjectTabContainer}>
-              <div className={projects.ProjectTab}>
+            <div className={about.AboutTabContainer}>
+              <div className={about.AboutTab}>
                 History
               </div>
-              <div className={projects.ProjectTab}>
+              <div className={about.AboutTab}>
                 Hobbies
               </div>
-              <div className={projects.ProjectTab}>
+              {/* <div className={projects.ProjectTab}>
                 ...
-              </div>
+              </div> */}
             </div>
-            <div className={projects.ProjectContainer}>
+            <div className={about.AboutContainer}>
                 <div className={about.InfoRow}>
                     <div className={about.BlurbContainer}>
                         <div className={about.BlurbHeader}>Current Position: Jr Software Developer</div>

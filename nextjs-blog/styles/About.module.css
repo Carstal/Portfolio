@@ -1,3 +1,43 @@
+
+
+.AboutTabContainer {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+}
+
+.AboutTab {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.AboutTab:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.AboutContainer {
+    width: 100%;
+    height: fit-content;
+    border: 5px solid black;
+    border-radius: 0px 25px 25px 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .InfoRow {
     width: 95%;
     margin: 10px auto 0px;
@@ -118,4 +158,66 @@
     margin-bottom: 5px;
     font-size: 21px;
     font-weight: bold;
+}
+
+@media (max-width: 925px) {
+    .InfoRow {
+        flex-direction: column;
+    }
+
+    .BlurbContainer,
+    .LeftSide,
+    .RightSide,
+    .Work {
+        width: 100%;
+    }
+
+    .ResumeContainer {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .BlurbHeader {
+        width: fit-content;
+    }
+}
+
+@media (max-width:500px) {
+
+    .ResumeContainer {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .AboutTab {
+        width: 50%;
+    }
+
+    .AboutTabContainer {
+        justify-content: space-between;
+    }
+
+    .AboutContainer {
+        min-width: 325px;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .BlurbHeader {
+        width: 100%;
+        border-right: 0px;
+        border-radius: 0px;
+    }
+
+    .Company {
+        font-size: 21px;
+        width: 60%;
+    }
+
+    .Date {
+        font-size: 18px;
+        text-align: end;
+        width: 40%;
+    }
 }
