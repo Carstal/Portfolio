@@ -8,7 +8,7 @@ export default function ProjectCard({project}) {
       <div className={projects.ProjectCardDesc}>
         <div className={projects.ProjectCardTitleContainer}>
           <div className={projects.ProjectCardTitle}>{project.title}</div>
-          <div className={projects.ProjectCardSubtitle}>{project.subtitle}</div>
+          {/* <div className={projects.ProjectCardSubtitle}>{project.subtitle}</div> */}
         </div>
         <div className={projects.ProjectCardTechContainer}>
           <div className={projects.ProjectCardTech}>{project.tech1}</div>

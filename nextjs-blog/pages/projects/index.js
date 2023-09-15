@@ -3,17 +3,17 @@ import styles from "../../styles/Home.module.css";
 import projects from "../../styles/Projects.module.css";
 import ProjectCard from "../../components/ProjectCard";
 import HeaderAndNav from "../../components/HeaderAndNav";
-import { server } from '../config';
+import { server } from '../../config';
 
 export async function getServerSideProps() {
   // const rootUri = process.env.REACT_APP_SERVER_URL || 'http://localhost:3000'
   const res = await fetch(server+"/api/project");
   const dbProjects = await res.json();
-  // console.log(dbProjects);
-  return { props: { projects }};
+   console.log(dbProjects);
+  return { props: { dbProjects }};
 }
 
-export default function Home({projects}) {
+export default function Home({dbProjects}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -41,7 +41,7 @@ export default function Home({projects}) {
             <div className={projects.ProjectContainer}>
               {/* Run .map on received JSON to Display all projects on DB */}
                 {/* TODO: Get list of all projects */}
-                {projects.map((project) => (
+                {dbProjects.map((project) => (
                   <ProjectCard project={project}/>
                 ))}
             </div>
