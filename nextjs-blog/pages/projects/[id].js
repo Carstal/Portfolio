@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css';
 import { useRouter } from "next/router";
-import MyNav from "../../components/nav.js";
+import HeaderAndNav from "../../components/HeaderAndNav";
+import { server } from '../../config';
 
 export async function getServerSideProps(context) {
-    const api = "http://localhost:3000/api/project/";
-    const id = context.params.id;
-    const url = api + id;
+    const url = server+"/api/project/"+context.params.id;
+    //console.log(url);
     const res = await fetch(url);
     const project = await res.json();
 
-    // console.log(visits)
+    //console.log(project)
     return { props: { project }};
 }
 
@@ -22,11 +22,9 @@ export default function Home({project}) {
         <title>Project Name - Carlo Staltari</title>
         <link rel="icon" href="/favicon.ico" />
     </Head>
-
-    <main>
-        {/* Navigation Area */}
-        <MyNav></MyNav>
-
+      <main>
+        <div className={styles.body}>
+          <HeaderAndNav></HeaderAndNav>
         {/* Body Area */}
         <div className={styles.body}>
             <div id="name">
@@ -61,6 +59,7 @@ export default function Home({project}) {
                 </div>
             </div>
             </div>
+        </div>
         </div>
         </div>
         </main>

@@ -6,14 +6,6 @@ import HeaderAndNav from "../../components/HeaderAndNav";
 import ResumeBtn from "../../components/ResumeBtn";
 import LinkedInBtn from "../../components/LinkedInBtn";
 
-// export async function getServerSideProps() {
-//   const res = await fetch("http://localhost:3000/api/project");
-//   const projectData = await res.json();
-
-//   // console.log(visits)
-//   return { props: { projectData } };
-// }
-
 export default function Home() {
   return (
     <div className={styles.container}>
