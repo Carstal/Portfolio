@@ -141,7 +141,7 @@
   border-radius: 5px;
 }
 .navItem:hover{
-  background-color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.5);
   cursor: pointer;
 }
 
@@ -233,7 +233,7 @@
   color: black;
 }
 .resumeBtn:hover{
-  background-color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.5);
   cursor: pointer;
 }
 
@@ -258,7 +258,7 @@
   align-items: center;
 }
 .socialIcon:hover{
-  background-color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.5);
   cursor: pointer;
 }
 

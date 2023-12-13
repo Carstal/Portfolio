@@ -38,7 +38,7 @@
 }
 
 .ContactIcon:hover {
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.5);
     cursor: pointer;
 }
 
