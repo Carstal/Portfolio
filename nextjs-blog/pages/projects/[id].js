@@ -31,11 +31,11 @@ export default function Home({project}) {
             <h1 className={styles.title}>
                 {project.title}
             </h1>
-            <h3 className={styles.title}>
+            <h2 className={styles.subtitle}>
                 {project.subtitle}
-            </h3>
+            </h2>
             <h3 className={styles.subtitle}>
-                Technologies used: {project.tech}
+                Technologies used: {project.tech1}, {project.tech2}
             </h3>
             </div>
         <div className='projectView'>
