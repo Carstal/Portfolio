@@ -29,8 +29,11 @@ export default function Home({project}) {
         <div className={styles.body}>
             <div id="name">
             <h1 className={styles.title}>
-                {project.name}
+                {project.title}
             </h1>
+            <h3 className={styles.title}>
+                {project.subtitle}
+            </h3>
             <h3 className={styles.subtitle}>
                 Technologies used: {project.tech}
             </h3>

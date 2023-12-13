@@ -1,5 +1,5 @@
 //CLientPromise Mongo
-const { MongoClient } = require("mongodb");
+const { MongoClient, ObjectId } = require("mongodb");
 
 const mongouri =
 "mongodb+srv://carstaltari:Pablo__545@iot2-carlo.ijsiznf.mongodb.net/?retryWrites=true&w=majority";
@@ -7,11 +7,13 @@ const mongouri =
 const client = new MongoClient(mongouri);
 
 async function getProjectById(id){
-    const intId = parseInt(id);
+    //const intId = parseInt(id);
+    const objId = new ObjectId(id);
+    console.log(objId);
     const result = await client
     .db("Portfolio")
-    .collection("Project")
-    .findOne({project_id: intId});
+    .collection("Projects")
+    .findOne({_id: objId});
     if (result) {
     console.log("Returning listing from db");
     console.log(result);
@@ -34,7 +36,9 @@ export default async function handler(req,res){
 
     console.log("------ID FROM .id---------");
     console.log(project_id);
-    const project = await getProjectById(project_id);
+    const idstring = ''+id+'';
+    const project = await getProjectById(idstring);
+    //const project = await getProjectById(project_id);
 
     res.status(200).json(project);
 }
