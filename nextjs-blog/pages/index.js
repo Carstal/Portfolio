@@ -58,7 +58,7 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-                <a href="https://www.linkedin.com/in/carstal/" className={styles.socialIcon}>
+                <a href="https://www.linkedin.com/in/carstal/" target='_blank' className={styles.socialIcon}>
                   {/* LinkedIn */}
                   <svg
                     width="50"
@@ -80,7 +80,7 @@ export default function Home() {
                     </defs>
                   </svg>
                 </a>
-                <a href="https://github.com/Carstal/" className={styles.socialIcon}>
+                <a href="https://github.com/Carstal/" target='_blank' className={styles.socialIcon}>
                   {/* GitHub */}
                   <svg
                     width="50"
@@ -95,7 +95,7 @@ export default function Home() {
                     />
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/carlostaltari/" className={styles.socialIcon}>
+                <a href="https://www.instagram.com/carlostaltari/" target='_blank' className={styles.socialIcon}>
                   {/* Instagram */}
                   <svg
                     width="50"
