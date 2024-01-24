@@ -4,7 +4,9 @@ import projects from "../styles/Projects.module.css";
 export default function ProjectCard({project}) {
   return (
     <div className={projects.ProjectCard}>
-      <div className={projects.ProjectCardImg}></div>
+      <div className={projects.ProjectCardImg}>
+        <img src={project.img} className={projects.ProjectCardImgInner} alt="Project Image" />
+      </div>
       <div className={projects.ProjectCardDesc}>
         <div className={projects.ProjectCardTitleContainer}>
           <div className={projects.ProjectCardTitle}>{project.title}</div>
