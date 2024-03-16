@@ -27,7 +27,7 @@ export default function Home({dbProjects}) {
 
           {/* Body Area */}
           <div className={styles.body}>
-            <div className={projects.ProjectTabContainer}>
+            {/* <div className={projects.ProjectTabContainer}>
               <div className={projects.ProjectTab}>
                 All
               </div>
@@ -37,7 +37,7 @@ export default function Home({dbProjects}) {
               <div className={projects.ProjectTab}>
                 Personal
               </div>
-            </div>
+            </div> */}
             <div className={projects.ProjectContainer}>
               {/* Run .map on received JSON to Display all projects on DB */}
                 {/* TODO: Get list of all projects */}
