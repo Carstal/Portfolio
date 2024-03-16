@@ -1,11 +1,15 @@
 .LinkContainer {
     margin: 5px auto;
-    width: 90%;
+    width: 95%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    /* border: 5px solid black;
+    border-radius: 50px;
+    padding-bottom: 25px;
+    box-shadow: 10px 20px rgba(121, 121, 121, 0.46); */
 }
 
 .LinkBtn {
@@ -32,4 +36,18 @@
 .LinkText {
     font-size: 42px;
     font-weight: bold;
+}
+
+.LinkHeader {
+    margin: 5px auto;
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.NameHeader {
+  font-size: 50px;
 }

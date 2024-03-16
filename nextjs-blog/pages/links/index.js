@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import link from "../../styles/Link.module.css";
-import Header from "../../components/Header";
+import Spacer from "../../components/Spacer";
 
 export default function Home() {
   return (
@@ -13,11 +13,15 @@ export default function Home() {
 
       <main>
         <div className={styles.body}>
-          <Header></Header>
+          {/* <Header></Header> */}
 
           {/* Body Area */}
           <div className={styles.body}>
             <div className={link.LinkContainer}>
+              <div className={link.LinkHeader}>
+                <h1 className={link.NameHeader}>Carlo Staltari</h1>
+                <Spacer height={"10px"}/>
+              </div>
               <a href="#" className={link.LinkBtn}>
                 <span className={link.LinkText}>Resume</span>
                 <div className={link.LinkIcon}>
