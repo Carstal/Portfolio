@@ -1,8 +1,7 @@
 //CLientPromise Mongo
 const { MongoClient } = require("mongodb");
 
-const mongouri =
-"mongodb+srv://carstaltari:Pablo__545@iot2-carlo.ijsiznf.mongodb.net/?retryWrites=true&w=majority";
+const mongouri = process.env.DBHOST_LINK;
 
 const client = new MongoClient(mongouri);
 

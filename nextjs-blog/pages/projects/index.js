@@ -6,7 +6,6 @@ import HeaderAndNav from "../../components/HeaderAndNav";
 import { server } from '../../config';
 
 export async function getServerSideProps() {
-  // const rootUri = process.env.REACT_APP_SERVER_URL || 'http://localhost:3000'
   const res = await fetch(server+"/api/project");
   const dbProjects = await res.json();
    console.log(dbProjects);
