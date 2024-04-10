@@ -2,7 +2,6 @@
 const { MongoClient } = require("mongodb");
 
 const mongouri = process.env.DBHOST_LINK;
-
 const client = new MongoClient(mongouri);
 
 async function getAllProjects(){
