@@ -3,7 +3,7 @@ import projects from "../styles/Projects.module.css";
 
 export default function ProjectCard({project}) {
   return (
-    <div className={projects.ProjectCard}>
+    <a href={project.github} className={projects.ProjectCard}>
       <div className={projects.ProjectCardImg}>
         <img src={project.img} className={projects.ProjectCardImgInner} alt="Project Image" />
       </div>
@@ -19,6 +19,6 @@ export default function ProjectCard({project}) {
           }} */}
         </div>
       </div>
-    </div>
+    </a>
   );
 }

@@ -17,10 +17,13 @@
     border: 5px solid black;
     border-radius: 20px;
     margin: 25px;
+    text-decoration: none;
+    color: black;
 }
 
 .ProjectCard:hover {
     cursor: pointer;
+    box-shadow: 10px 5px 5px black;
 }
 
 .ProjectCardImg {
