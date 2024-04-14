@@ -135,6 +135,7 @@
 .nav .list .navItem{
   display: flex;
   width: 25%;
+  min-width: 235px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -322,10 +323,11 @@ li.navItem:hover{
   }
 
   .nav {
-    display: none;
+    /* display: none; */
+    overflow-y: auto;
   }
 
-  .MobileNav {
+  /* .MobileNav {
     display: flex;
     height: 50px;
     align-items: center;
@@ -336,7 +338,7 @@ li.navItem:hover{
 
   .MobileNav:hover {
     cursor: pointer;
-  }
+  } */
 
   
 .indexMain{
