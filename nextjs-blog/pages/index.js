@@ -18,7 +18,9 @@ export default function Home() {
           <div className={styles.indexMain}>
             <div className={styles.indexLeft}>
               <div className={styles.imgFrame}>
-                <div className={styles.box}></div>
+                <div className={styles.box}>
+                  <img src='https://s3.amazonaws.com/www.carstal.com/penguin.png' alt="penguinPlaceholder"></img>
+                </div>
                 <div className={styles.underlines}>
                   <div className={styles.line}></div>
                   <div className={styles.line}></div>
@@ -34,7 +36,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.socialsContainer}>
-                <div className={styles.resumeBtn}>
+                <a href='https://s3.amazonaws.com/www.carstal.com/CarloStaltari-Resume.pdf' target='_blank' className={styles.resumeBtn}>
                   <span className={styles.resumeBtnText}>Resume</span>
                   <div className={styles.resumeIcon}>
                     <svg
@@ -57,7 +59,7 @@ export default function Home() {
                       </defs>
                     </svg>
                   </div>
-                </div>
+                </a>
                 <a href="https://www.linkedin.com/in/carstal/" target='_blank' className={styles.socialIcon}>
                   {/* LinkedIn */}
                   <svg

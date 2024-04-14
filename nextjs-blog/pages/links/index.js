@@ -22,7 +22,7 @@ export default function Home() {
                 <h1 className={link.NameHeader}>Carlo Staltari</h1>
                 <Spacer height={"10px"}/>
               </div>
-              <a href="#" className={link.LinkBtn}>
+              <a href="https://s3.amazonaws.com/www.carstal.com/CarloStaltari-Resume.pdf" target="_blank" className={link.LinkBtn}>
                 <span className={link.LinkText}>Resume</span>
                 <div className={link.LinkIcon}>
                   <svg

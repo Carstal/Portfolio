@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export default function ResumeBtn() {
   return (
-    <div className={styles.resumeBtn}>
+    <a href='https://s3.amazonaws.com/www.carstal.com/CarloStaltari-Resume.pdf' target='_blank' className={styles.resumeBtn}>
     <span className={styles.resumeBtnText}>Resume</span>
     <div className={styles.resumeIcon}>
       <svg
@@ -26,6 +26,6 @@ export default function ResumeBtn() {
         </defs>
       </svg>
     </div>
-  </div>
+  </a>
   );
 }

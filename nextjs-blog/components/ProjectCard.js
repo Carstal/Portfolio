@@ -3,7 +3,7 @@ import projects from "../styles/Projects.module.css";
 
 export default function ProjectCard({project}) {
   return (
-    <a href={project.github} className={projects.ProjectCard}>
+    <a href={project.github} target='_blank' className={projects.ProjectCard}>
       <div className={projects.ProjectCardImg}>
         <img src={project.img} className={projects.ProjectCardImgInner} alt="Project Image" />
       </div>
