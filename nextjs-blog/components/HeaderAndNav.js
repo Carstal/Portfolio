@@ -1,23 +1,56 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from '../styles/Home.module.css';
 import Spacer from "../components/Spacer";
 
-class HeaderAndNav extends React.Component {
-    render() {
+function HeaderAndNav () {
+    const downChev = useRef(null);
+    const upChev = useRef(null);
+    const navList = useRef(null);
+    
+    const toggleDisplayNav = () => {
+      const downChevVisible = downChev.current.className.baseVal.includes('visible');
+      if(downChevVisible){
+        downChev.current.className.baseVal.replace('visible','hidden');
+        upChev.current.className.baseVal.replace('hidden','visible');
+        downChev.current.className.animVal.replace('visible','hidden');
+        upChev.current.className.animVal.replace('hidden','visible');
+      }
+      // if(downChevVisible){
+      //   const jsUpChev = document.getElementsById('chev-up');
+      //     jsUpChev.classList.remove('hidden');
+      //     jsUpChev.classList.add('visible');
+      //   const jsDownChev = document.getElementsById('chev-down');
+      //     jsDownChev.classList.remove('visible');
+      //     jsDownChev.classList.add('hidden');
+      // }
+      // else{
+      //   const jsUpChev = document.getElementsById('chev-up');
+      //     jsUpChev.classList.remove('visible');
+      //     jsUpChev.classList.add('hidden');
+      //   const jsDownChev = document.getElementsById('chev-down');
+      //     jsDownChev.classList.remove('hidden');
+      //     jsDownChev.classList.add('visible');
+      // }
+        // console.log(downChev.current.className.baseVal);
+        // console.log(upChev.current.className.baseVal);
+        // console.log(downChev.current.className.animVal);
+        // console.log(upChev.current.className.animVal);
+        // console.log(navList.current.className);
+    };
     return(
         <div className={styles.headerAndNav}>
         <h1 className={styles.headerTitle}>CARLO</h1>
         <Spacer height={"15px"} />
-        <div className={styles.MobileNav}>
+        <div className={styles.MobileNav} onClick={toggleDisplayNav}>
             <div>Nav</div>
-            <svg id='chev-down' xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <svg id='chev-down' ref={downChev} xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-down visible" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
             </svg>
-            <svg id='chev-up' xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <svg id='chev-up' ref={upChev} xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-up hidden" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
             </svg>
         </div>
-        <div className={styles.nav}>
+        <div className={styles.nav} ref={navList}>
           <ul className={styles.list}>
             <li className={styles.navItem}> 
           <a href="/" className={styles.navItem}>
@@ -130,7 +163,6 @@ class HeaderAndNav extends React.Component {
         <Spacer height={"10px"} />
       </div>
     );
-    }
 }
 export default function MyNav(){
     return <HeaderAndNav></HeaderAndNav>;
