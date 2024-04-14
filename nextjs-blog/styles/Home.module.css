@@ -123,11 +123,16 @@
   margin-left: auto;
 }
 
-.nav{
+.nav .list{
   display: flex;
   flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-.nav .navItem{
+
+.nav .list .navItem{
   display: flex;
   width: 25%;
   flex-direction: row;
@@ -140,7 +145,7 @@
   color: black;
   border-radius: 5px;
 }
-.navItem:hover{
+li.navItem:hover{
   background-color: rgba(137, 43, 226, 0.5);
   cursor: pointer;
 }

@@ -18,6 +18,8 @@ class HeaderAndNav extends React.Component {
             </svg>
         </div>
         <div className={styles.nav}>
+          <ul className={styles.list}>
+            <li className={styles.navItem}> 
           <a href="/" className={styles.navItem}>
             <label>HOME</label>
             <div className={styles.navIcon}>
@@ -42,6 +44,8 @@ class HeaderAndNav extends React.Component {
               </svg>
             </div>
           </a>
+          </li>
+          <li className={styles.navItem}>
           <a href="/about" className={styles.navItem}>
             <label>ABOUT</label>
             <div className={styles.navIcon}>
@@ -66,6 +70,8 @@ class HeaderAndNav extends React.Component {
               </svg>
             </div>
           </a>
+          </li>
+          <li className={styles.navItem}>
           <a href="/projects" className={styles.navItem}>
             <label>PROJECTS</label>
             <div className={styles.navIcon}>
@@ -90,6 +96,8 @@ class HeaderAndNav extends React.Component {
               </svg>
             </div>
           </a>
+          </li>
+          <li className={styles.navItem}>
           <a href="/contact" className={styles.navItem}>
             <label>CONTACT</label>
             <div className={styles.navIcon}>
@@ -116,6 +124,8 @@ class HeaderAndNav extends React.Component {
               </svg>
             </div>
           </a>
+          </li>
+          </ul>
         </div>
         <Spacer height={"10px"} />
       </div>
