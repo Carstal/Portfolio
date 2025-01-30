@@ -39,6 +39,7 @@
 
 .ContactIcon:hover {
     background-color: rgba(137, 43, 226, 0.5);
+    box-shadow: 6px 6px rgba(137, 43, 226, 0.25);
     cursor: pointer;
 }
 

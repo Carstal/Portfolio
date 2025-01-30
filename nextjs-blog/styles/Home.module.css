@@ -237,9 +237,11 @@ li.navItem:hover{
   height: 75px;
   text-decoration: none;
   color: black;
+  margin: 5px;
 }
 .resumeBtn:hover{
   background-color: rgba(137, 43, 226, 0.5);
+  box-shadow: 6px 6px rgba(137, 43, 226, 0.25);
   cursor: pointer;
 }
 
@@ -265,6 +267,7 @@ li.navItem:hover{
 }
 .socialIcon:hover{
   background-color: rgba(137, 43, 226, 0.5);
+  box-shadow: 6px 6px rgba(137, 43, 226, 0.25);
   cursor: pointer;
 }
 
