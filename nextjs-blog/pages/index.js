@@ -19,7 +19,7 @@ export default function Home() {
             <div className={styles.indexLeft}>
               <div className={styles.imgFrame}>
                 <div className={styles.box}>
-                  <img src='https://s3.amazonaws.com/www.carstal.com/penguin.png' alt="penguinPlaceholder"></img>
+                  <img className={styles.homePic} src='https://s3.us-east-1.amazonaws.com/www.carstal.com/CarloNotionFace.png' alt="CarloPortrait"></img>
                 </div>
                 <div className={styles.underlines}>
                   <div className={styles.line}></div>

@@ -304,6 +304,11 @@ li.navItem:hover{
   height: 300px;
 }
 
+.homePic{
+  max-height: 300px;
+  max-width: 300px;
+}
+
 .MobileNav {
   display: none;
 }
