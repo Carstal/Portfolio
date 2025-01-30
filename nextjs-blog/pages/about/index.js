@@ -104,16 +104,16 @@ export default function Home() {
                             <div className={about.WorkHeader}>Programming Languages</div>
                             <div className={about.WorkContainer}>
                                 <div className={about.ExtraRow}>
-                                    <div className={about.Label}>HTML</div>
-                                    <div className={about.Label}>CSS</div>
+                                    {/* <div className={about.Label}>HTML</div> */}
+                                    {/* <div className={about.Label}>CSS</div> */}
                                     <div className={about.Label}>JavaScript</div>
                                     <div className={about.Label}>TypeScript</div>
-                                    <div className={about.Label}>PHP</div>
-                                    <div className={about.Label}>Java</div>
+                                    {/* <div className={about.Label}>PHP</div> */}
+                                    {/* <div className={about.Label}>Java</div> */}
                                     <div className={about.Label}>Python</div>
                                     <div className={about.Label}>C#</div>
-                                    <div className={about.Label}>Kotlin</div>
-                                    <div className={about.Label}>Swift</div>
+                                    {/* <div className={about.Label}>Kotlin</div> */}
+                                    {/* <div className={about.Label}>Swift</div> */}
                                 </div>
                             </div>
                         </div>
@@ -123,13 +123,13 @@ export default function Home() {
                             <div className={about.WorkContainer}>
                                 <div className={about.ExtraRow}>
                                     <div className={about.Label}>jQuery</div>
-                                    <div className={about.Label}>Angular</div>
+                                    {/* <div className={about.Label}>Angular</div> */}
                                     <div className={about.Label}>React</div>
                                     <div className={about.Label}>NodeJS</div>
                                     <div className={about.Label}>Next.js</div>
                                     <div className={about.Label}>Backbone.js</div>
                                     <div className={about.Label}>.NET</div>
-                                    <div className={about.Label}>Spring Boot</div>
+                                    {/* <div className={about.Label}>Spring Boot</div> */}
                                 </div>
                             </div>
                         </div>
@@ -141,10 +141,10 @@ export default function Home() {
                                     <div className={about.Label}>Azure</div>
                                     <div className={about.Label}>AWS</div>
                                     <div className={about.Label}>MongoDB</div>
-                                    <div className={about.Label}>Firebase</div>
+                                    {/* <div className={about.Label}>Firebase</div> */}
                                     <div className={about.Label}>SQL</div>
-                                    <div className={about.Label}>MySQL</div>
-                                    <div className={about.Label}>Docker</div>
+                                    {/* <div className={about.Label}>MySQL</div> */}
+                                    {/* <div className={about.Label}>Docker</div> */}
                                     <div className={about.Label}>Git</div>
                                 </div>
                             </div>
